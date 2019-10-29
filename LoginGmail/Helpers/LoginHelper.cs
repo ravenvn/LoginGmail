@@ -102,10 +102,7 @@ namespace LoginGmail.Helpers
                 string profile_name = Path.GetFileName(profile);
                 var service = ChromeDriverService.CreateDefaultService();
                 service.HideCommandPromptWindow = true;
-                var options = new ChromeOptions
-                {
-                    BinaryLocation = config.Bin_Location
-                };
+                var options = new ChromeOptions();
                 options.AddArguments("--user-data-dir=" + profile_path);
                 options.AddArguments("--profile-directory=" + profile_name);
                 //options.AddArguments("--proxy-server=socks5://127.0.0.1:1080");
@@ -256,10 +253,7 @@ namespace LoginGmail.Helpers
                 string profile_name = Path.GetFileName(profile);
                 var service = ChromeDriverService.CreateDefaultService();
                 service.HideCommandPromptWindow = true;
-                var options = new ChromeOptions
-                {
-                    BinaryLocation = config.Bin_Location
-                };
+                var options = new ChromeOptions();
                 options.AddArguments("--user-data-dir=" + profile_path);
                 options.AddArguments("--profile-directory=" + profile_name);
                 options.AddArguments("--proxy-server=socks5://127.0.0.1:1080");
@@ -383,10 +377,7 @@ namespace LoginGmail.Helpers
                 string profile_name = Path.GetFileName(profile);
                 var service = ChromeDriverService.CreateDefaultService();
                 service.HideCommandPromptWindow = true;
-                var options = new ChromeOptions
-                {
-                    BinaryLocation = config.Bin_Location
-                };
+                var options = new ChromeOptions();
                 options.AddArguments("--user-data-dir=" + profile_path);
                 options.AddArguments("--profile-directory=" + profile_name);
                 options.AddArguments("disable-infobars");
@@ -441,10 +432,7 @@ namespace LoginGmail.Helpers
                 string profile_name = Path.GetFileName(profile);
                 var service = ChromeDriverService.CreateDefaultService();
                 service.HideCommandPromptWindow = true;
-                var options = new ChromeOptions
-                {
-                    BinaryLocation = config.Bin_Location
-                };
+                var options = new ChromeOptions();
                 options.AddArguments("--user-data-dir=" + profile_path);
                 options.AddArguments("--profile-directory=" + profile_name);
                 options.AddArguments("--proxy-server=socks5://127.0.0.1:1080");

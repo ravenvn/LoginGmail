@@ -15,6 +15,5 @@ namespace LoginGmail.Helpers
         public string Location { get; set; }
         public int IP_Alive_Interval { get; set; }
         public int IP_Timeout { get; set; }
-        public string Bin_Location { get; set; }
     }
 }
